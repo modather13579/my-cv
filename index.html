@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="السيرة الذاتية لهبة عبد الكريم الحاج - متخصصة في خدمة العملاء">
-    <title>السيرة الذاتية | هبة عبد الكريم الحاج</title>
+    <meta name="description" content="السيرة الذاتية لهبة عبد الكريم الحاج - متخصصة في خدمة العملاء و Call Center">
+    <title>السيرة الذاتية | هبة عبد الكريم الحاج | Heba Alhajj</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <style>
@@ -77,6 +77,13 @@
             margin-bottom: 0.5rem;
             font-weight: 700;
             letter-spacing: -0.5px;
+        }
+
+        .header-content .subtitle {
+            font-size: 1.8rem;
+            margin-bottom: 0.3rem;
+            opacity: 0.9;
+            font-weight: 500;
         }
 
         .header-content p {
@@ -195,14 +202,14 @@
             color: var(--text-light);
         }
 
-        /* Languages Section */
-        .languages-container {
+        /* Fields Section */
+        .fields-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 1.5rem;
         }
 
-        .language-item {
+        .field-item {
             background: var(--light-bg);
             padding: 1.5rem;
             border-radius: var(--border-radius);
@@ -210,12 +217,12 @@
             border-left: 4px solid var(--secondary-color);
         }
 
-        .language-item:hover {
+        .field-item:hover {
             transform: translateY(-5px);
             box-shadow: var(--shadow-sm);
         }
 
-        .language-item h3 {
+        .field-item h3 {
             color: var(--primary-dark);
             margin-bottom: 0.5rem;
             font-size: 1.2rem;
@@ -224,128 +231,15 @@
             gap: 0.8rem;
         }
 
-        .language-item h3 i {
+        .field-item h3 i {
             color: var(--secondary-color);
             font-size: 1.3rem;
         }
 
-        .language-item p {
+        .field-item p {
             color: var(--text-light);
             padding-right: 2rem;
-        }
-
-        /* Hobbies Section */
-        .hobbies-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .hobby-item {
-            background: white;
-            padding: 1.5rem;
-            border-radius: var(--border-radius);
-            transition: var(--transition);
-            box-shadow: var(--shadow-sm);
-            border-top: 3px solid var(--secondary-color);
-        }
-
-        .hobby-item:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-md);
-        }
-
-        .hobby-item h3 {
-            color: var(--primary-dark);
-            margin-bottom: 0.8rem;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-        }
-
-        .hobby-item h3 i {
-            color: var(--secondary-color);
-            font-size: 1.3rem;
-        }
-
-        .hobby-item p {
-            color: var(--text-light);
-            padding-right: 2rem;
-        }
-
-        /* Skills Section */
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .skill-item {
-            background: white;
-            padding: 1.5rem;
-            border-radius: var(--border-radius);
-            transition: var(--transition);
-            box-shadow: var(--shadow-sm);
-        }
-
-        .skill-item:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-md);
-        }
-
-        .skill-item h3 {
-            color: var(--primary-dark);
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-        }
-
-        .skill-item h3 i {
-            color: var(--secondary-color);
-            font-size: 1.3rem;
-        }
-
-        .skill-level {
-            height: 8px;
-            background: #eceff1;
-            border-radius: 10px;
-            margin-top: 1rem;
-            overflow: hidden;
-        }
-
-        .skill-level-fill {
-            height: 100%;
-            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-            border-radius: 10px;
-            position: relative;
-            transition: width 1s ease-in-out;
-        }
-
-        .skill-level-fill::after {
-            content: attr(data-level);
-            position: absolute;
-            right: 10px;
-            top: -25px;
-            background: var(--primary-dark);
-            color: white;
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
-            font-size: 0.7rem;
-            font-weight: bold;
-        }
-
-        .skill-level-fill::before {
-            content: "";
-            position: absolute;
-            right: 15px;
-            top: -8px;
-            width: 10px;
-            height: 10px;
-            background: var(--primary-dark);
-            transform: rotate(45deg);
+            line-height: 1.6;
         }
 
         /* Footer Styles */
@@ -407,13 +301,15 @@
 
         section:nth-child(2) { animation-delay: 0.1s; }
         section:nth-child(3) { animation-delay: 0.2s; }
-        section:nth-child(4) { animation-delay: 0.3s; }
-        section:nth-child(5) { animation-delay: 0.4s; }
 
         /* Responsive Styles */
         @media (max-width: 992px) {
             .header-content h1 {
                 font-size: 2.2rem;
+            }
+            
+            .header-content .subtitle {
+                font-size: 1.6rem;
             }
             
             .section-title {
@@ -430,6 +326,10 @@
                 font-size: 2rem;
             }
             
+            .header-content .subtitle {
+                font-size: 1.5rem;
+            }
+            
             .header-content p {
                 font-size: 1.1rem;
             }
@@ -442,9 +342,7 @@
                 padding: 2rem;
             }
             
-            .languages-container,
-            .hobbies-container,
-            .skills-container {
+            .fields-container {
                 grid-template-columns: 1fr;
             }
         }
@@ -457,6 +355,10 @@
             
             .header-content h1 {
                 font-size: 1.8rem;
+            }
+            
+            .header-content .subtitle {
+                font-size: 1.4rem;
             }
             
             .contact-info {
@@ -495,12 +397,13 @@
         <div class="container">
             <div class="header-content">
                 <h1>هبة عبد الكريم الحاج</h1>
+                <div class="subtitle">Heba Alhajj</div>
                 <p>متخصصة في خدمة العملاء والعلاقات العامة</p>
                 
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>hebaahiji@gmail.com</span>
+                        <span>Hebaalhjj@gmail.com</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
@@ -523,7 +426,7 @@
             </h2>
             <div class="section-content">
                 <p>
-                    أطمح إلى الانضمام إلى فريق عمل ديناميكي حيث يمكنني استخدام مهاراتي في التواصل وفهم احتياجات العملاء لتقديم حلول مخصصة وفعالة. أسعى لتطوير خبراتي في مجال خدمة العملاء وبناء علاقات طويلة الأمد معهم، مع التركيز على تحقيق رضا العملاء وضمان تجربة استثنائية لهم.
+                    أطمح إلى الانضمام إلى فريق عمل ديناميكي حيث يمكنني استخدام مهاراتي في التواصل وفهم احتياجات العملاء لتقديم حلول مخصصة وفعالة. أسعى لتطوير خبراتي في مجال خدمة العملاء ومراكز الاتصال، مع التركيز على تحقيق رضا العملاء وضمان تجربة استثنائية لهم من خلال التميز في خدمة العملاء وإدارة العلاقات.
                 </p>
             </div>
         </section>
@@ -542,90 +445,28 @@
             </div>
         </section>
 
-        <section class="languages">
+        <section class="fields">
             <h2 class="section-title">
-                <i class="fas fa-language"></i>
-                اللغات
+                <i class="fas fa-briefcase"></i>
+                المجالات المهنية
             </h2>
             <div class="section-content">
-                <div class="languages-container">
-                    <div class="language-item">
-                        <h3><i class="fas fa-check-circle"></i> اللغة العربية</h3>
-                        <p>اللغة الأم - إتقان تام في القراءة والكتابة والمحادثة</p>
+                <div class="fields-container">
+                    <div class="field-item">
+                        <h3><i class="fas fa-box"></i> مجال التعبئة والتغليف</h3>
+                        <p>خبرة في عمليات التعبئة والتغليف وفق معايير الجودة والسلامة، مع الاهتمام بالتفاصيل والدقة في تنفيذ المهام لضمان حماية المنتجات وتقديمها بشكل لائق.</p>
                     </div>
-                    <div class="language-item">
-                        <h3><i class="fas fa-check-circle"></i> اللغة الإنجليزية</h3>
-                        <p>مستوى جيد - القدرة على القراءة والكتابة والمحادثة الأساسية</p>
+                    <div class="field-item">
+                        <h3><i class="fas fa-hashtag"></i> مجال العمل في السوشيال ميديا</h3>
+                        <p>إدارة حسابات التواصل الاجتماعي، إنشاء محتوى جذاب، التفاعل مع المتابعين، وبناء استراتيجيات لزيادة التفاعل والوصول إلى الجمهور المستهدف.</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="hobbies">
-            <h2 class="section-title">
-                <i class="fas fa-heart"></i>
-                الهوايات والاهتمامات
-            </h2>
-            <div class="section-content">
-                <div class="hobbies-container">
-                    <div class="hobby-item">
-                        <h3><i class="fas fa-paint-brush"></i> تصميم الجرافيك</h3>
-                        <p>تصميم الشعارات والمواد الإعلانية باستخدام برامج التصميم المختلفة</p>
+                    <div class="field-item">
+                        <h3><i class="fas fa-headset"></i> مجال خدمة العملاء</h3>
+                        <p>تقديم دعم مميز للعملاء، حل الشكاوى والمشكلات بكفاءة، بناء علاقات إيجابية مع العملاء، والعمل على تحسين تجربة العملاء بشكل مستمر.</p>
                     </div>
-                    <div class="hobby-item">
-                        <h3><i class="fas fa-book-open"></i> القراءة</h3>
-                        <p>القراءة في مجالات التنمية الذاتية، علم النفس، والأدب العالمي</p>
-                    </div>
-                    <div class="hobby-item">
-                        <h3><i class="fas fa-camera-retro"></i> التصوير الفوتوغرافي</h3>
-                        <p>التقاط الصور الطبيعية والاجتماعية ومعالجتها رقمياً</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="skills">
-            <h2 class="section-title">
-                <i class="fas fa-star"></i>
-                المهارات الشخصية
-            </h2>
-            <div class="section-content">
-                <div class="skills-container">
-                    <div class="skill-item">
-                        <h3><i class="fas fa-users"></i> العمل الجماعي</h3>
-                        <div class="skill-level">
-                            <div class="skill-level-fill" data-level="90%" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <h3><i class="fas fa-tasks"></i> التنظيم وإدارة المهام</h3>
-                        <div class="skill-level">
-                            <div class="skill-level-fill" data-level="85%" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <h3><i class="fas fa-random"></i> المرونة والتكيف</h3>
-                        <div class="skill-level">
-                            <div class="skill-level-fill" data-level="95%" style="width: 95%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <h3><i class="fas fa-lightbulb"></i> حل المشكلات</h3>
-                        <div class="skill-level">
-                            <div class="skill-level-fill" data-level="80%" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <h3><i class="fas fa-clock"></i> إدارة الوقت</h3>
-                        <div class="skill-level">
-                            <div class="skill-level-fill" data-level="88%" style="width: 88%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <h3><i class="fas fa-comments"></i> التواصل الفعال</h3>
-                        <div class="skill-level">
-                            <div class="skill-level-fill" data-level="92%" style="width: 92%"></div>
-                        </div>
+                    <div class="field-item">
+                        <h3><i class="fas fa-phone-alt"></i> مجال Call Center</h3>
+                        <p>استقبال المكالمات الواردة وإجراء المكالمات الصادرة، إدارة شكاوى العملاء، توفير المعلومات المطلوبة، وتسجيل البيانات بدقة في أنظمة المركز.</p>
                     </div>
                 </div>
             </div>
@@ -639,7 +480,7 @@
                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="mailto:Hebaalhjj@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 </div>
                 <div class="copyright">
                     &copy; <span id="year"></span> هبة عبد الكريم الحاج - جميع الحقوق محفوظة
@@ -652,33 +493,26 @@
         // Set current year in footer
         document.getElementById('year').textContent = new Date().getFullYear();
         
-        // Animate skill bars on scroll
+        // Simple animation for fields on scroll
         document.addEventListener('DOMContentLoaded', function() {
-            const skillItems = document.querySelectorAll('.skill-item');
+            const fieldItems = document.querySelectorAll('.field-item');
             
-            const animateSkills = () => {
-                skillItems.forEach(item => {
-                    const skillLevel = item.querySelector('.skill-level-fill');
-                    const width = skillLevel.style.width;
-                    skillLevel.style.width = '0';
-                    
-                    setTimeout(() => {
-                        skillLevel.style.width = width;
-                    }, 100);
-                });
-            };
-            
-            // Run animation when skills section is in view
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        animateSkills();
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
                         observer.unobserve(entry.target);
                     }
                 });
             }, { threshold: 0.1 });
             
-            observer.observe(document.querySelector('.skills'));
+            fieldItems.forEach(item => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+                item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(item);
+            });
         });
     </script>
 </body>
