@@ -3,517 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="السيرة الذاتية لهبة عبد الكريم الحاج - متخصصة في خدمة العملاء و Call Center">
-    <title>السيرة الذاتية | هبة عبد الكريم الحاج | Heba Alhajj</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #5e35b1;
-            --primary-dark: #4527a0;
-            --secondary-color: #7e57c2;
-            --dark: #263238;
-            --light: #f5f5f5;
-            --light-bg: #f9f9f9;
-            --text-color: #37474f;
-            --text-light: #607d8b;
-            --border-radius: 10px;
-            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
-            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
-            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Tajawal', sans-serif;
-            background-color: var(--light);
-            color: var(--text-color);
-            line-height: 1.7;
-            font-weight: 400;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 1140px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header Styles */
-        header {
-            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
-            color: white;
-            padding: 3rem 0;
-            text-align: center;
-            margin-bottom: 3rem;
-            box-shadow: var(--shadow-md);
-            position: relative;
-            overflow: hidden;
-        }
-
-        header::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 5px;
-            background: linear-gradient(90deg, #ff4081, #ff9100, #ffeb3b, #4caf50, #2196f3, #9c27b0);
-        }
-
-        .header-content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .header-content h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-        }
-
-        .header-content .subtitle {
-            font-size: 1.8rem;
-            margin-bottom: 0.3rem;
-            opacity: 0.9;
-            font-weight: 500;
-        }
-
-        .header-content p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            font-weight: 300;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .contact-info {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-
-        .contact-item {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.7rem;
-            background: rgba(255, 255, 255, 0.15);
-            padding: 0.7rem 1.5rem;
-            border-radius: 50px;
-            backdrop-filter: blur(5px);
-            transition: var(--transition);
-        }
-
-        .contact-item:hover {
-            background: rgba(255, 255, 255, 0.25);
-            transform: translateY(-2px);
-        }
-
-        .contact-item i {
-            font-size: 1.1rem;
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        /* Section Styles */
-        section {
-            background-color: white;
-            border-radius: var(--border-radius);
-            padding: 2.5rem;
-            margin-bottom: 2.5rem;
-            box-shadow: var(--shadow-sm);
-            transition: var(--transition);
-            border: 1px solid rgba(0, 0, 0, 0.05);
-        }
-
-        section:hover {
-            box-shadow: var(--shadow-md);
-            transform: translateY(-3px);
-        }
-
-        .section-title {
-            color: var(--primary-color);
-            margin-bottom: 2rem;
-            padding-bottom: 0.8rem;
-            border-bottom: 2px solid var(--light-bg);
-            display: flex;
-            align-items: center;
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
-
-        .section-title i {
-            margin-left: 1rem;
-            font-size: 1.8rem;
-            color: var(--secondary-color);
-        }
-
-        .section-content {
-            padding: 0 0.5rem;
-        }
-
-        /* Objective Section */
-        .objective p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: var(--text-color);
-        }
-
-        /* Education Section */
-        .education-item {
-            margin-bottom: 2rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px dashed #eee;
-        }
-
-        .education-item:last-child {
-            margin-bottom: 0;
-            padding-bottom: 0;
-            border-bottom: none;
-        }
-
-        .education-item h3 {
-            color: var(--secondary-color);
-            margin-bottom: 0.5rem;
-            font-size: 1.3rem;
-            font-weight: 600;
-        }
-
-        .education-item .date {
-            display: inline-block;
-            background: var(--light-bg);
-            color: var(--primary-color);
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            margin-bottom: 0.8rem;
-        }
-
-        .education-item p {
-            color: var(--text-light);
-        }
-
-        /* Fields Section */
-        .fields-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .field-item {
-            background: var(--light-bg);
-            padding: 1.5rem;
-            border-radius: var(--border-radius);
-            transition: var(--transition);
-            border-left: 4px solid var(--secondary-color);
-        }
-
-        .field-item:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-sm);
-        }
-
-        .field-item h3 {
-            color: var(--primary-dark);
-            margin-bottom: 0.5rem;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-        }
-
-        .field-item h3 i {
-            color: var(--secondary-color);
-            font-size: 1.3rem;
-        }
-
-        .field-item p {
-            color: var(--text-light);
-            padding-right: 2rem;
-            line-height: 1.6;
-        }
-
-        /* Footer Styles */
-        footer {
-            text-align: center;
-            padding: 3rem 0;
-            color: var(--text-light);
-            font-size: 0.95rem;
-            background: white;
-            margin-top: 3rem;
-            border-top: 1px solid rgba(0, 0, 0, 0.05);
-        }
-
-        .footer-content {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-
-        .social-links a {
-            color: var(--secondary-color);
-            font-size: 1.5rem;
-            transition: var(--transition);
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--light-bg);
-        }
-
-        .social-links a:hover {
-            color: white;
-            background: var(--primary-color);
-            transform: translateY(-3px);
-        }
-
-        .copyright {
-            margin-top: 1.5rem;
-            opacity: 0.8;
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        section {
-            animation: fadeIn 0.6s ease-out forwards;
-        }
-
-        section:nth-child(2) { animation-delay: 0.1s; }
-        section:nth-child(3) { animation-delay: 0.2s; }
-
-        /* Responsive Styles */
-        @media (max-width: 992px) {
-            .header-content h1 {
-                font-size: 2.2rem;
-            }
-            
-            .header-content .subtitle {
-                font-size: 1.6rem;
-            }
-            
-            .section-title {
-                font-size: 1.4rem;
-            }
-        }
-
-        @media (max-width: 768px) {
-            header {
-                padding: 2.5rem 0;
-            }
-            
-            .header-content h1 {
-                font-size: 2rem;
-            }
-            
-            .header-content .subtitle {
-                font-size: 1.5rem;
-            }
-            
-            .header-content p {
-                font-size: 1.1rem;
-            }
-            
-            .contact-item {
-                padding: 0.6rem 1.2rem;
-            }
-            
-            section {
-                padding: 2rem;
-            }
-            
-            .fields-container {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 576px) {
-            header {
-                padding: 2rem 0;
-                margin-bottom: 2rem;
-            }
-            
-            .header-content h1 {
-                font-size: 1.8rem;
-            }
-            
-            .header-content .subtitle {
-                font-size: 1.4rem;
-            }
-            
-            .contact-info {
-                flex-direction: column;
-                align-items: center;
-                gap: 0.8rem;
-            }
-            
-            .contact-item {
-                width: 100%;
-                justify-content: center;
-            }
-            
-            section {
-                padding: 1.5rem;
-            }
-            
-            .section-title {
-                font-size: 1.3rem;
-            }
-            
-            .education-item h3 {
-                font-size: 1.2rem;
-            }
-            
-            .social-links a {
-                width: 40px;
-                height: 40px;
-                font-size: 1.3rem;
-            }
-        }
-    </style>
+    <meta name="description" content="السيرة الذاتية لهبة عبد الكريم الحاج - متخصصة في خدمة العملاء والعلاقات العامة">
+    <meta name="keywords" content="سيرة ذاتية, CV, هبة عبد الكريم الحاج, خدمة العملاء, العلاقات العامة">
+    <meta name="author" content="هبة عبد الكريم الحاج">
+    <title>السيرة الذاتية | هبة عبد الكريم الحاج</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <!-- زر WhatsApp الدائري -->
+    <a href="https://wa.me/966547593136?text=مرحباً%20هبة" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" title="تواصل عبر WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.272-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.255.949c-1.238.503-2.359 1.236-3.203 2.162-1.738 1.914-2.502 4.614-1.898 7.405.539 2.487 2.368 4.772 4.859 5.833 1.769.859 3.834 1.20 5.846.902 1.488-.22 2.879-.874 3.9-1.771l.170-.141 1.95.484c1.074.267 1.986.25 2.657-.058.338-.161.58-.42.744-.771.165-.351.19-.744.099-1.095-.091-.351-.29-.638-.574-.838-.284-.2-.618-.26-.95-.18l-1.575.392-.313-.78c.735-1.368 1.24-2.727 1.438-4.236.52-3.948-.422-8.054-2.836-11.326C15.667 3.71 12.563 1.5 9.051 1.5 5.027 1.5 1.368 3.859.426 7.294c-.521 1.966-.196 4.04.928 5.824 1.124 1.784 2.933 3.02 4.9 3.487.41.1.826.15 1.246.15.528 0 1.052-.067 1.57-.2l.313.78-1.575-.392c-.332-.08-.666-.02-.95.18-.284.2-.483.487-.574.838-.091.351-.066.744.099 1.095.164.351.406.61.744.771.671.308 1.583.325 2.657.058l1.95-.484.17.141c1.021.897 2.412 1.551 3.9 1.771 2.012.298 4.077-.043 5.846-.902 2.491-1.061 4.32-3.346 4.859-5.833.604-2.791-.16-5.491-1.898-7.405-.844-.926-1.965-1.659-3.203-2.162a9.87 9.87 0 00-4.255-.949z"/>
+        </svg>
+    </a>
+
+    <!-- الرأس والملاحة -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">هبة</div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+                    <li><a href="#about" class="nav-link">عني</a></li>
+                    <li><a href="#experience" class="nav-link">الخبرات</a></li>
+                    <li><a href="#skills" class="nav-link">المهارات</a></li>
+                    <li><a href="#education" class="nav-link">التعليم</a></li>
+                    <li><a href="#contact" class="nav-link">التواصل</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- القسم الرئيسي (البطل) -->
+    <section id="home" class="hero">
         <div class="container">
-            <div class="header-content">
-                <h1>هبة عبد الكريم الحاج</h1>
-                <div class="subtitle">Heba Alhajj</div>
-                <p>متخصصة في خدمة العملاء والعلاقات العامة</p>
-                
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>Hebaalhjj@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
+            <div class="hero-content">
+                <h1 class="hero-title">هبة عبد الكريم الحاج</h1>
+                <p class="hero-subtitle">متخصصة في خدمة العملاء والعلاقات العامة</p>
+                <p class="hero-description">محترفة في التعامل مع العملاء وبناء العلاقات الإيجابية، مع خبرة في إدارة وسائل التواصل الاجتماعي والعمل في مراكز الاتصال</p>
+                <div class="hero-contact">
+                    <a href="tel:+966547593136" class="contact-btn phone">
+                        <span class="icon">📱</span>
                         <span>0547593136</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
+                    </a>
+                    <a href="mailto:Hebaalhjj@gmail.com" class="contact-btn email">
+                        <span class="icon">✉️</span>
+                        <span>البريد الإلكتروني</span>
+                    </a>
+                    <div class="contact-btn location">
+                        <span class="icon">📍</span>
                         <span>المدينة المنورة، السعودية</span>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <div class="container">
-        <section class="objective">
-            <h2 class="section-title">
-                <i class="fas fa-bullseye"></i>
-                الهدف الوظيفي
-            </h2>
-            <div class="section-content">
-                <p>
-                    أطمح إلى الانضمام إلى فريق عمل ديناميكي حيث يمكنني استخدام مهاراتي في التواصل وفهم احتياجات العملاء لتقديم حلول مخصصة وفعالة. أسعى لتطوير خبراتي في مجال خدمة العملاء ومراكز الاتصال، مع التركيز على تحقيق رضا العملاء وضمان تجربة استثنائية لهم من خلال التميز في خدمة العملاء وإدارة العلاقات.
-                </p>
-            </div>
-        </section>
-
-        <section class="education">
-            <h2 class="section-title">
-                <i class="fas fa-graduation-cap"></i>
-                المؤهلات الدراسية
-            </h2>
-            <div class="section-content">
-                <div class="education-item">
-                    <h3>شهادة ثانوية عامة</h3>
-                    <div class="date">فبراير 2016 - الوقت الحاضر</div>
-                    <p>الشبكة الوطنية للتربية والتعليم، المدينة المنورة</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="fields">
-            <h2 class="section-title">
-                <i class="fas fa-briefcase"></i>
-                المجالات المهنية
-            </h2>
-            <div class="section-content">
-                <div class="fields-container">
-                    <div class="field-item">
-                        <h3><i class="fas fa-box"></i> مجال التعبئة والتغليف</h3>
-                        <p>خبرة في عمليات التعبئة والتغليف وفق معايير الجودة والسلامة، مع الاهتمام بالتفاصيل والدقة في تنفيذ المهام لضمان حماية المنتجات وتقديمها بشكل لائق.</p>
-                    </div>
-                    <div class="field-item">
-                        <h3><i class="fas fa-hashtag"></i> مجال العمل في السوشيال ميديا</h3>
-                        <p>إدارة حسابات التواصل الاجتماعي، إنشاء محتوى جذاب، التفاعل مع المتابعين، وبناء استراتيجيات لزيادة التفاعل والوصول إلى الجمهور المستهدف.</p>
-                    </div>
-                    <div class="field-item">
-                        <h3><i class="fas fa-headset"></i> مجال خدمة العملاء</h3>
-                        <p>تقديم دعم مميز للعملاء، حل الشكاوى والمشكلات بكفاءة، بناء علاقات إيجابية مع العملاء، والعمل على تحسين تجربة العملاء بشكل مستمر.</p>
-                    </div>
-                    <div class="field-item">
-                        <h3><i class="fas fa-phone-alt"></i> مجال Call Center</h3>
-                        <p>استقبال المكالمات الواردة وإجراء المكالمات الصادرة، إدارة شكاوى العملاء، توفير المعلومات المطلوبة، وتسجيل البيانات بدقة في أنظمة المركز.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <footer>
+    <!-- قسم عني -->
+    <section id="about" class="about">
         <div class="container">
-            <div class="footer-content">
-                <div class="social-links">
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="mailto:Hebaalhjj@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <h2 class="section-title">الهدف الوظيفي</h2>
+            <div class="about-content">
+                <p>أطمح إلى الانضمام إلى فريق عمل ديناميكي حيث يمكنني استخدام مهاراتي في التواصل وفهم احتياجات العملاء لتقديم حلول مخصصة وفعالة. أسعى لتطوير خبراتي في مجال خدمة العملاء ومراكز الاتصال، مع التركيز على تحقيق رضا العملاء وضمان تجربة استثنائية لهم من خلال التميز في خدمة العملاء وإدارة العلاقات.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخبرات -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">المجالات المهنية</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>مجال التعبئة والتغليف</h3>
+                        <span class="experience-badge">مهارة عملية</span>
+                    </div>
+                    <p class="experience-description">خبرة في عمليات التعبئة والتغليف وفق معايير الجودة والسلامة، مع الاهتمام بالتفاصيل والدقة في تنفيذ المهام لضمان حماية المنتجات وتقديمها بشكل لائق</p>
                 </div>
-                <div class="copyright">
-                    &copy; <span id="year"></span> هبة عبد الكريم الحاج - جميع الحقوق محفوظة
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>مجال العمل في السوشيال ميديا</h3>
+                        <span class="experience-badge">مهارة حديثة</span>
+                    </div>
+                    <p class="experience-description">إدارة حسابات التواصل الاجتماعي، إنشاء محتوى جذاب، التفاعل مع المتابعين، وبناء استراتيجيات لزيادة التفاعل والوصول إلى الجمهور المستهدف</p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>مجال خدمة العملاء</h3>
+                        <span class="experience-badge">الخبرة الأساسية</span>
+                    </div>
+                    <p class="experience-description">تقديم دعم مميز للعملاء، حل الشكاوى والمشكلات بكفاءة، بناء علاقات إيجابية مع العملاء، والعمل على تحسين تجربة العملاء بشكل مستمر</p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>مجال Call Center</h3>
+                        <span class="experience-badge">مهارة متقدمة</span>
+                    </div>
+                    <p class="experience-description">استقبال المكالمات الواردة وإجراء المكالمات الصادرة، إدارة شكاوى العملاء، توفير المعلومات المطلوبة، وتسجيل البيانات بدقة في أنظمة المركز</p>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- قسم المهارات -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">المهارات والكفاءات</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>التواصل الفعال</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <h3>خدمة العملاء</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 93%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <h3>حل المشكلات</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <h3>إدارة الوقت</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 88%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <h3>إدارة وسائل التواصل</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 92%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <h3>التعاطف والاستماع</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 94%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <h3>العمل تحت الضغط</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 89%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <h3>المرونة والتكيف</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 91%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الهوايات والاهتمامات -->
+            <div class="interests-section">
+                <h3 class="interests-title">الهوايات والاهتمامات</h3>
+                <div class="interests-grid">
+                    <div class="interest-tag">التواصل الاجتماعي</div>
+                    <div class="interest-tag">بناء العلاقات</div>
+                    <div class="interest-tag">التطوير المستمر</div>
+                    <div class="interest-tag">العمل الجماعي</div>
+                    <div class="interest-tag">الإبداع والابتكار</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التعليم والدورات -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">التعليم والمؤهلات</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">🎓</div>
+                    <h3>المؤهل العلمي</h3>
+                    <p class="education-degree">شهادة ثانوية عامة</p>
+                    <p class="education-description">الشبكة الوطنية للتربية والتعليم - المدينة المنورة</p>
+                    <p class="education-date">فبراير 2016 - الوقت الحاضر</p>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">💼</div>
+                    <h3>الخبرة العملية</h3>
+                    <p class="education-degree">متخصصة في خدمة العملاء</p>
+                    <p class="education-description">عمل في مجالات متعددة تشمل التعبئة والتغليف والعمل في مراكز الاتصال</p>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">🌐</div>
+                    <h3>مهارات التكنولوجيا</h3>
+                    <p class="education-degree">إدارة وسائل التواصل الاجتماعي</p>
+                    <p class="education-description">إنشاء محتوى جذاب وإدارة الحسابات بكفاءة عالية</p>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">🎯</div>
+                    <h3>التطوير المستمر</h3>
+                    <p class="education-degree">التعلم والتحسين</p>
+                    <p class="education-description">الالتزام بالتطور المستمر واكتساب مهارات جديدة في مجال خدمة العملاء</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">التواصل معي</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <span class="contact-icon">📱</span>
+                    <h3>الهاتف</h3>
+                    <a href="tel:+966547593136">0547593136</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <h3>البريد الإلكتروني</h3>
+                    <a href="mailto:Hebaalhjj@gmail.com">Hebaalhjj@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <h3>الموقع</h3>
+                    <p>المدينة المنورة، السعودية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 هبة عبد الكريم الحاج - جميع الحقوق محفوظة</p>
+            <p class="footer-credit">صُنع بإتقان من خلال <a href="https://updo1.nzmly.com/?product=digital" target="_blank" rel="noopener noreferrer">منصة UPDO1</a></p>
+        </div>
     </footer>
 
-    <script>
-        // Set current year in footer
-        document.getElementById('year').textContent = new Date().getFullYear();
-        
-        // Simple animation for fields on scroll
-        document.addEventListener('DOMContentLoaded', function() {
-            const fieldItems = document.querySelectorAll('.field-item');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.1 });
-            
-            fieldItems.forEach(item => {
-                item.style.opacity = '0';
-                item.style.transform = 'translateY(20px)';
-                item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-                observer.observe(item);
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
